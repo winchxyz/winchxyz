@@ -238,6 +238,18 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 
 <br />
 
+<!--
+  ══════════════════════════════════════════════════════════════════════════
+  SNAKE — commented out until .github/workflows/snake.yml has run once,
+  because the SVGs it embeds don't exist yet and would show as broken images.
+
+  To turn it on (see SETUP.md §2):
+    1. gh auth refresh -h github.com -s workflow      ← grants the missing scope
+    2. git add .github && git commit -m "add snake workflow" && git push
+    3. wait for the run at github.com/winchxyz/winchxyz/actions
+    4. delete these comment markers, commit, push.
+  ══════════════════════════════════════════════════════════════════════════
+
 ## `~/contributions`
 
 <div align="center">
@@ -249,6 +261,8 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 </picture>
 
 </div>
+
+-->
 
 <br />
 
