@@ -1,22 +1,3 @@
-<!--
-  ┌───────────────────────────────────────────────────────────────────────┐
-  │  winchxyz / winchxyz  ·  GitHub profile README                        │
-  │                                                                       │
-  │  PALETTE — "Clay": monochrome + one warm accent.                      │
-  │    0A0B0E  ink        · gradient start, badge labels                  │
-  │    3A2A22  warm shade · gradient mid                                  │
-  │    14100E  pill       · toolbox badge fill                            │
-  │    D97757  clay       · THE accent — titles, ring, primary CTA        │
-  │    E8A87C  clay light · streak fire                                   │
-  │    E8E3DD  bone       · light text on dark                            │
-  │    8B8681  muted      · body text — mid-tone, reads on BOTH themes    │
-  │    6E6A66  dim        · dates                                         │
-  │                                                                       │
-  │  Find-and-replace those hex values to reskin the whole profile.       │
-  │  See SETUP.md for publishing + self-hosting the two commented blocks. │
-  └───────────────────────────────────────────────────────────────────────┘
--->
-
 <div align="center">
 
 <img
@@ -279,3 +260,22 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 />
 
 </div>
+
+<!--
+  ┌───────────────────────────────────────────────────────────────────────┐
+  │  winchxyz / winchxyz  ·  GitHub profile README                        │
+  │                                                                       │
+  │  PALETTE — "Clay": monochrome + one warm accent.                      │
+  │    0A0B0E  ink        · gradient start, badge labels                  │
+  │    3A2A22  warm shade · gradient mid                                  │
+  │    14100E  pill       · toolbox badge fill                            │
+  │    D97757  clay       · THE accent — titles, ring, primary CTA        │
+  │    E8A87C  clay light · streak fire                                   │
+  │    E8E3DD  bone       · light text on dark                            │
+  │    8B8681  muted      · body text — mid-tone, reads on BOTH themes    │
+  │    6E6A66  dim        · dates                                         │
+  │                                                                       │
+  │  Find-and-replace those hex values to reskin the whole profile.       │
+  │  See SETUP.md for publishing + self-hosting the two commented blocks. │
+  └───────────────────────────────────────────────────────────────────────┘
+-->
