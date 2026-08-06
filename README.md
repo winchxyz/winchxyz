@@ -28,8 +28,8 @@
 />
 
 <img
-  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=1200&color=C6F24E&center=true&vCenter=true&width=720&height=48&lines=No+engine.+No+libraries.+No+build+step.;GPU+toys+that+run+from+a+single+file;AI+dev+tools+that+verify+their+own+work;Multi-agent+workflows+for+Claude+Code"
-  alt="No engine. No libraries. No build step."
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=1200&color=C6F24E&center=true&vCenter=true&width=720&height=48&lines=Real-time+graphics+and+AI+dev+tools;Shaders+on+one+end%2C+agents+on+the+other;Local-first.+Open+source.+Nothing+hidden.;Built+because+I+wanted+it+to+exist"
+  alt="Real-time graphics and AI dev tools"
 />
 
 <br />
@@ -51,17 +51,17 @@
 
 ## `whoami`
 
-I build things that have no business working, and then make them work.
+I build the thing I wish existed, then put it on GitHub.
 
-A 3D sandcastle simulator running entirely on the GPU — no engine, no libraries, no asset files, no build step. A shoe-repair sim about roads that remember, shipped as one HTML file where the geometry, materials, audio and portraits are all generated at runtime. A design studio where the AI's every edit is checked against what actually painted on screen. A brainstorming methodology that argues back instead of agreeing with you.
+Some of it is graphics — real-time simulators where the world is generated in shaders and there's no engine underneath. Some of it is tooling I reach for every day: a design studio that verifies its own edits, a ghostwriter that actually sounds like me, a way to think an idea through that pushes back instead of nodding along.
 
-Some of it is one-prompt experiments that got out of hand. Some of it I use every day. All of it is open source and runs on your own machine.
+Different problems, same habits. Runs on your machine. Open source. Nothing hidden behind a wrapper.
 
 ```yaml
-lately:       GPU toys, agent workflows, dev tools I wanted to exist
+building:     real-time graphics, AI dev tools, agent workflows
 stack:        JavaScript · GLSL · TypeScript · Electron · Claude Agent SDK
-principles:   [local-first, BYOK, open source, zero dependencies]
-allergic_to:  [AI slop, black-box diffs, npm installing 400 MB for a triangle]
+principles:   [local-first, BYOK, open source, no black boxes]
+allergic_to:  [AI slop, tools that hide what they did, 400 MB for a triangle]
 find_me_at:   x.com/winchxyz
 ```
 
@@ -277,7 +277,7 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 
 <div align="center">
 
-### `One prompt in. Something strange out.`
+### `Different problems. Same habits.`
 
 <a href="https://x.com/winchxyz"><b>@winchxyz</b></a> &nbsp;·&nbsp; <a href="https://tryloupe.app"><b>tryloupe.app</b></a>
 
