@@ -22,10 +22,12 @@ jobs:
         id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
-          # Clay palette — matches the README. Levels run empty → clay.
+          # Signal palette — matches the README. Levels run empty → lime.
+          # Light mode ends deeper than the accent: #C6F24E alone is too pale
+          # to read as "max activity" against a white page.
           outputs: |
-            dist/github-snake.svg?color_snake=#3A2A22&color_dots=#EDE8E1,#EFCDB9,#E0A184,#D97757,#A84F32
-            dist/github-snake-dark.svg?color_snake=#E8E3DD&color_dots=#161210,#4A3225,#8A4E36,#C06544,#D97757
+            dist/github-snake.svg?color_snake=#1C2418&color_dots=#EDF0E6,#DFF0BC,#C6F24E,#A3CC3C,#7A9E22
+            dist/github-snake-dark.svg?color_snake=#E9EDE3&color_dots=#10140E,#33401C,#6B8A2B,#9DC93C,#C6F24E
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4

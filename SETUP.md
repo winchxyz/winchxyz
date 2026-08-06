@@ -21,8 +21,10 @@ Then open <https://github.com/winchxyz> — it should be live immediately.
 
 `.github/workflows/snake.yml` renders your contribution graph as a snake animation
 and pushes the SVGs to an `output` branch. The README embeds them from there.
-Both variants are coloured in the Clay palette — dark snake on bone dots for light mode,
-bone snake on clay dots for dark.
+Both variants are coloured in the Signal palette — dark moss snake on pale dots for light
+mode, bone snake on lime dots for dark. Note the light-mode ramp ends *deeper* than the
+accent (`#7A9E22`, not `#C6F24E`): lime alone is too pale to read as "max activity"
+against a white page.
 
 - It runs automatically on every push to `main`, plus every 12 hours.
 - **Until the first run finishes, the two snake images in the README will be broken.** That's normal.
@@ -41,9 +43,15 @@ At the time this was built, both public instances were down — verified, not gu
 |---|---|---|
 | `github-readme-stats.vercel.app` | **503** | The public instance is chronically rate-limited. The project's own README recommends self-hosting. |
 | `github-profile-trophy.vercel.app` | **402 Payment Required** | The maintainer's Vercel free-tier quota is exhausted. Resets, then blows again. |
+| `github-profile-summary-cards.vercel.app` | **500** | Went down mid-build on 2026-08-06 — verified service-wide (fails for other usernames too), not account-specific. It worked earlier the same day, so it may come back. |
 
-So the stats card, top-languages card, the four repo pin cards and the trophies live inside an
-HTML comment block in `README.md`, ready to switch on.
+So the stats card, top-languages card, the four repo pin cards, the trophies and the four
+summary cards all live inside HTML comment blocks in `README.md`, ready to switch on.
+
+That leaves `~/stats` as a single streak card, deliberately widened to 62% and centred so it
+reads as intentional rather than truncated. Resist the urge to pad it with `shields.io`
+`dynamic/json` badges — they hit GitHub's API unauthenticated from shields' shared IPs and
+render as `INVALID` under load.
 
 ### Self-host github-readme-stats (5 min, free)
 
@@ -71,26 +79,35 @@ set `GITHUB_TOKEN` (a scope-less PAT), swap the domain.
 
 ## 4. Tweaking
 
-**Palette — "Clay"**: monochrome plus exactly one warm accent.
+**Palette — "Signal"**: monochrome plus exactly one acid accent.
 
 | Role | Hex | Where |
 |---|---|---|
-| Ink | `0A0B0E` | gradient start, badge label backgrounds |
-| Warm shade | `3A2A22` | gradient middle, snake body (light mode) |
-| Pill | `14100E` | toolbox badge fill |
-| **Clay (the accent)** | `D97757` | capsule gradient end, typing text, section titles, streak ring, star counts, primary CTA |
-| Clay light | `E8A87C` | streak fire |
-| Bone | `E8E3DD` | light text and logos on dark |
-| Muted | `8B8681` | body text — deliberately mid-tone so it reads on **both** light and dark GitHub |
-| Dim | `6E6A66` | dates |
+| Ink | `07090A` | gradient start, badge label backgrounds |
+| Moss | `1C2418` | gradient middle, snake body (light mode) |
+| Pill | `10140E` | toolbox badge fill |
+| **Lime (the accent)** | `C6F24E` | capsule gradient end, typing text, section titles, streak ring, star counts, primary CTA |
+| Lime light | `E4FF9B` | streak fire |
+| Chalk | `F2F6EC` | capsule text, brightest logos |
+| Bone | `E9EDE3` | light text and logos on dark |
+| Ash | `B4BAAB` | streak numbers |
+| Muted | `868C7E` | body text — deliberately mid-tone so it reads on **both** light and dark GitHub |
+| Dim | `676C60` | dates |
 
-Find-and-replace those hex values to reskin the whole profile.
+Find-and-replace those hex values to reskin the whole profile. **One caveat:** the `#` in
+`countColor=%23C6F24E` is URL-encoded, so a careless regex over six-hex-digit runs will also
+match the `23C6F2` straddling it. Replace the full six-character tokens above, not arbitrary
+hex runs.
 
-Clay `#D97757` is Anthropic's brand colour, which is why it sits naturally next to the
-Claude/Claude Code badges. The discipline that makes this palette work: **one accent, nothing
-else competes.** The toolbox badges are deliberately monochrome pills rather than each
-vendor's brand colour — a rainbow row would fight the accent. Logo brightness encodes
-priority: bone for what you ship with, clay for the agent stack, muted grey for the rest.
+The discipline that makes this palette work: **one accent, nothing else competes.** The
+toolbox badges are deliberately monochrome pills rather than each vendor's brand colour —
+a rainbow row would fight the accent. Logo brightness encodes priority: bone for what you
+ship with, lime for the agent stack, muted grey for the rest.
+
+Lime on near-black reads as terminal/demoscene, which is the point — it matches shaders,
+zero dependencies and "no build step" better than a warm accent did. It is also the most
+aggressive of the options; if it ever feels loud, `#2DD4BF` (teal) is a drop-in swap for
+`#C6F24E` that keeps every other token unchanged.
 
 **How light/dark is handled** — GitHub serves one README to both themes, so each service is
 handled differently:
