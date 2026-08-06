@@ -25,20 +25,18 @@
   alt="winch — vibecoding cool shit"
 />
 
-<a href="https://tryloupe.app">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=1200&color=D97757&center=true&vCenter=true&width=720&height=48&lines=AI+web-design+studio+%E2%86%92+tryloupe.app;Local-first.+BYOK.+Open+source.;Agent+workflows+that+actually+ship;Ship+fast+%C2%B7+verify+everything"
-    alt="AI web-design studio → tryloupe.app"
-  />
-</a>
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=1200&color=D97757&center=true&vCenter=true&width=720&height=48&lines=No+engine.+No+libraries.+No+build+step.;GPU+toys+that+run+from+a+single+file;AI+dev+tools+that+verify+their+own+work;Multi-agent+workflows+for+Claude+Code"
+  alt="No engine. No libraries. No build step."
+/>
 
 <br />
 
-<a href="https://tryloupe.app">
-  <img src="https://img.shields.io/badge/tryloupe.app-D97757?style=for-the-badge&logo=googlechrome&logoColor=F5F0EB&labelColor=0A0B0E" alt="Website" />
-</a>
 <a href="https://x.com/winchxyz">
-  <img src="https://img.shields.io/badge/@winchxyz-0A0B0E?style=for-the-badge&logo=x&logoColor=F5F0EB&labelColor=0A0B0E" alt="X / Twitter" />
+  <img src="https://img.shields.io/badge/@winchxyz-D97757?style=for-the-badge&logo=x&logoColor=F5F0EB&labelColor=0A0B0E" alt="X / Twitter" />
+</a>
+<a href="https://tryloupe.app">
+  <img src="https://img.shields.io/badge/tryloupe.app-14100E?style=for-the-badge&logo=googlechrome&logoColor=8B8681&labelColor=0A0B0E" alt="Website" />
 </a>
 <a href="https://github.com/winchxyz?tab=followers">
   <img src="https://img.shields.io/github/followers/winchxyz?style=for-the-badge&logo=github&logoColor=F5F0EB&label=followers&labelColor=0A0B0E&color=8B8681" alt="Followers" />
@@ -51,17 +49,17 @@
 
 ## `whoami`
 
-I build **AI tools for people who still care how things look.**
+I build things that have no business working, and then make them work.
 
-Right now that's **[Loupe](https://github.com/winchxyz/loupe)** — a local-first, open-source AI web-design studio for Windows. The agent builds the site, you refine it by hand on the live render, and every edit gets verified against what actually painted on screen. No black box, no "trust me bro" diffs.
+A 3D sandcastle simulator running entirely on the GPU — no engine, no libraries, no asset files, no build step. A shoe-repair sim about roads that remember, shipped as one HTML file where the geometry, materials, audio and portraits are all generated at runtime. A design studio where the AI's every edit is checked against what actually painted on screen. A brainstorming methodology that argues back instead of agreeing with you.
 
-Before that: **[idea-to-build](https://github.com/winchxyz/idea-to-build)** — a multi-agent brainstorming methodology for people who got tired of LLMs agreeing with them.
+Some of it is one-prompt experiments that got out of hand. Some of it I use every day. All of it is open source and runs on your own machine.
 
 ```yaml
-building:     Loupe — AI builds it, you perfect it. Live, and verified.
-stack:        Electron · Node · TypeScript · Claude Agent SDK
-principles:   [local-first, BYOK, open source, verify everything]
-allergic_to:  [AI slop, black-box diffs, the 47th purple-gradient landing page]
+lately:       GPU toys, agent workflows, dev tools I wanted to exist
+stack:        JavaScript · GLSL · TypeScript · Electron · Claude Agent SDK
+principles:   [local-first, BYOK, open source, zero dependencies]
+allergic_to:  [AI slop, black-box diffs, npm installing 400 MB for a triangle]
 find_me_at:   x.com/winchxyz
 ```
 
@@ -73,15 +71,15 @@ find_me_at:   x.com/winchxyz
 <tr>
 <td width="50%" valign="top">
 
-### [`loupe`](https://github.com/winchxyz/loupe)
+### [`tidewright`](https://github.com/winchxyz/tidewright)
 
-Open-source, local Windows AI website builder. AI builds the site, you refine it by hand on the live render — every edit verified against the real DOM.
+A 3D sandcastle simulator that runs entirely on the GPU. No engine, no libraries, no asset files, no build step — built in a single prompt with Claude Code.
 
-<img src="https://img.shields.io/github/stars/winchxyz/loupe?style=flat-square&logo=github&logoColor=8B8681&labelColor=0A0B0E&color=D97757" alt="stars" />
-<img src="https://img.shields.io/github/languages/top/winchxyz/loupe?style=flat-square&labelColor=0A0B0E&color=8B8681" alt="language" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/loupe?style=flat-square&labelColor=0A0B0E&color=8B8681" alt="last commit" />
+<img src="https://img.shields.io/github/stars/winchxyz/tidewright?style=flat-square&logo=github&logoColor=8B8681&labelColor=0A0B0E&color=D97757" alt="stars" />
+<img src="https://img.shields.io/github/languages/top/winchxyz/tidewright?style=flat-square&labelColor=0A0B0E&color=8B8681" alt="language" />
+<img src="https://img.shields.io/github/last-commit/winchxyz/tidewright?style=flat-square&labelColor=0A0B0E&color=8B8681" alt="last commit" />
 
-`Electron` `Claude Agent SDK` `BYOK` `local-first`
+`WebGL2` `GLSL` `zero-deps` `one-prompt`
 
 </td>
 <td width="50%" valign="top">
@@ -101,15 +99,15 @@ Turn a raw idea into a plan you can build. A multi-agent methodology with isolat
 <tr>
 <td width="50%" valign="top">
 
-### [`solebound`](https://github.com/winchxyz/solebound)
+### [`loupe`](https://github.com/winchxyz/loupe)
 
-A GPU shoe-repair simulator about roads that remember. One HTML file, zero dependencies — geometry, materials, audio and portraits all generated at runtime.
+Open-source, local Windows AI website builder. AI builds the site, you refine it by hand on the live render — every edit verified against the real DOM.
 
-<img src="https://img.shields.io/github/stars/winchxyz/solebound?style=flat-square&logo=github&logoColor=8B8681&labelColor=0A0B0E&color=D97757" alt="stars" />
-<img src="https://img.shields.io/github/languages/top/winchxyz/solebound?style=flat-square&labelColor=0A0B0E&color=8B8681" alt="language" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/solebound?style=flat-square&labelColor=0A0B0E&color=8B8681" alt="last commit" />
+<img src="https://img.shields.io/github/stars/winchxyz/loupe?style=flat-square&logo=github&logoColor=8B8681&labelColor=0A0B0E&color=D97757" alt="stars" />
+<img src="https://img.shields.io/github/languages/top/winchxyz/loupe?style=flat-square&labelColor=0A0B0E&color=8B8681" alt="language" />
+<img src="https://img.shields.io/github/last-commit/winchxyz/loupe?style=flat-square&labelColor=0A0B0E&color=8B8681" alt="last commit" />
 
-`WebGL` `GLSL` `procedural` `single-file`
+`Electron` `Claude Agent SDK` `BYOK` `local-first`
 
 </td>
 <td width="50%" valign="top">
@@ -127,6 +125,13 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 </td>
 </tr>
 </table>
+
+<!--
+  PENDING — add `clout` here once the repo is public and released.
+  "Your Telegram, organized. AI-powered personal cloud on top of your own
+  Telegram account." TypeScript. Five cards won't balance in a 2-column
+  table, so either drop x-ghostwriter to the stats block or go to 3 rows.
+-->
 
 <br />
 
@@ -171,14 +176,28 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 
 <div align="center">
 
+<img width="62%" src="https://streak-stats.demolab.com?user=winchxyz&theme=transparent&hide_border=true&border_radius=6&ring=D97757&fire=E8A87C&currStreakLabel=D97757&currStreakNum=B9B2AB&sideNums=B9B2AB&sideLabels=8B8681&dates=6E6A66&excludeDaysLabel=8B8681&date_format=M%20j%5B%2C%20Y%5D" alt="Contribution streak" />
+
+</div>
+
+<!--
+  ══════════════════════════════════════════════════════════════════════════
+  github-profile-summary-cards — pulled out on 2026-08-06.
+
+  The whole public instance started returning 500 (verified: fails for other
+  usernames too, so it's service-wide, not account-specific). It worked
+  earlier the same day, so it may well come back — retry the URL below and
+  delete these markers if it 200s.
+
+  Self-hosting works the same way as the others: fork
+  vn7n24fzkq/github-profile-summary-cards, deploy to Vercel, set GITHUB_TOKEN,
+  swap the domain. See SETUP.md.
+  ══════════════════════════════════════════════════════════════════════════
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=winchxyz&theme=github_dark" />
   <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=winchxyz&theme=github" alt="Profile details" />
 </picture>
-<img width="49%" src="https://streak-stats.demolab.com?user=winchxyz&theme=transparent&hide_border=true&border_radius=6&ring=D97757&fire=E8A87C&currStreakLabel=D97757&currStreakNum=B9B2AB&sideNums=B9B2AB&sideLabels=8B8681&dates=6E6A66&excludeDaysLabel=8B8681&date_format=M%20j%5B%2C%20Y%5D" alt="Contribution streak" />
-
-<br /><br />
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=winchxyz&theme=github_dark" />
   <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=winchxyz&theme=github" alt="Repos per language" />
@@ -192,7 +211,9 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
   <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=winchxyz&theme=github&utcOffset=3" alt="Productive time" />
 </picture>
 
-</div>
+-->
+
+
 
 <!--
   ══════════════════════════════════════════════════════════════════════════
@@ -215,14 +236,14 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 
 <br /><br />
 
-<a href="https://github.com/winchxyz/loupe">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=loupe&theme=transparent&hide_border=true&title_color=D97757&text_color=8B8681&icon_color=D97757&description_lines_count=3" alt="loupe" />
+<a href="https://github.com/winchxyz/tidewright">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=tidewright&theme=transparent&hide_border=true&title_color=D97757&text_color=8B8681&icon_color=D97757&description_lines_count=3" alt="tidewright" />
 </a>
 <a href="https://github.com/winchxyz/idea-to-build">
   <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=idea-to-build&theme=transparent&hide_border=true&title_color=D97757&text_color=8B8681&icon_color=D97757&description_lines_count=3" alt="idea-to-build" />
 </a>
-<a href="https://github.com/winchxyz/solebound">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=solebound&theme=transparent&hide_border=true&title_color=D97757&text_color=8B8681&icon_color=D97757&description_lines_count=3" alt="solebound" />
+<a href="https://github.com/winchxyz/loupe">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=loupe&theme=transparent&hide_border=true&title_color=D97757&text_color=8B8681&icon_color=D97757&description_lines_count=3" alt="loupe" />
 </a>
 <a href="https://github.com/winchxyz/x-ghostwriter">
   <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=x-ghostwriter&theme=transparent&hide_border=true&title_color=D97757&text_color=8B8681&icon_color=D97757&description_lines_count=3" alt="x-ghostwriter" />
@@ -254,9 +275,9 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 
 <div align="center">
 
-### `AI builds it. You perfect it. Live, and verified.`
+### `One prompt in. Something strange out.`
 
-<a href="https://tryloupe.app"><b>tryloupe.app</b></a> &nbsp;·&nbsp; <a href="https://x.com/winchxyz"><b>@winchxyz</b></a>
+<a href="https://x.com/winchxyz"><b>@winchxyz</b></a> &nbsp;·&nbsp; <a href="https://tryloupe.app"><b>tryloupe.app</b></a>
 
 <img
   src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:D97757,45:3A2A22,100:0A0B0E&animation=fadeIn"
