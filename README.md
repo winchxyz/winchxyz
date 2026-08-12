@@ -69,6 +69,10 @@ find_me_at:   x.com/winchxyz
 
 ## `~/projects`
 
+### Real-time graphics
+
+Everything generated at runtime — no asset files, no build step, nothing downloaded.
+
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -78,7 +82,7 @@ find_me_at:   x.com/winchxyz
 A 3D sandcastle simulator that runs entirely on the GPU. No engine, no libraries, no asset files, no build step — built in a single prompt with Claude Code.
 
 <img src="https://img.shields.io/github/stars/winchxyz/tidewright?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/languages/top/winchxyz/tidewright?style=flat-square&labelColor=07090A&color=868C7E" alt="language" />
+<img src="https://img.shields.io/github/forks/winchxyz/tidewright?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
 <img src="https://img.shields.io/github/last-commit/winchxyz/tidewright?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
 
 `WebGL2` `GLSL` `zero-deps` `one-prompt`
@@ -86,19 +90,65 @@ A 3D sandcastle simulator that runs entirely on the GPU. No engine, no libraries
 </td>
 <td width="50%" valign="top">
 
+### [`moon-rover`](https://github.com/winchxyz/moon-rover)
+
+A 3D lunar rover survey game. WebGL2, no build step, no third-party assets — every texture and every sound is generated at runtime.
+
+<img src="https://img.shields.io/github/stars/winchxyz/moon-rover?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
+<img src="https://img.shields.io/github/forks/winchxyz/moon-rover?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
+<img src="https://img.shields.io/github/last-commit/winchxyz/moon-rover?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
+
+`WebGL2` `procedural-audio` `zero-assets` `gamedev`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [`navis`](https://github.com/winchxyz/navis)
+
+A flooded Gothic cathedral rendered in real time. One HTML file, no assets — the rose window, the marble, the caustics and the reverb are all generated at load.
+
+<img src="https://img.shields.io/github/stars/winchxyz/navis?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
+<img src="https://img.shields.io/github/forks/winchxyz/navis?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
+<img src="https://img.shields.io/github/last-commit/winchxyz/navis?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
+
+`three.js` `GLSL` `single-file` `procedural-audio`
+
+</td>
+<td width="50%" valign="top">
+
+### [`solebound`](https://github.com/winchxyz/solebound)
+
+A GPU shoe-repair simulator about roads that remember. One HTML file — geometry, materials, audio and portraits all generated at runtime.
+
+<img src="https://img.shields.io/github/stars/winchxyz/solebound?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
+<img src="https://img.shields.io/github/languages/top/winchxyz/solebound?style=flat-square&labelColor=07090A&color=868C7E" alt="language" />
+<img src="https://img.shields.io/github/last-commit/winchxyz/solebound?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
+
+`WebGL` `GLSL` `procedural` `single-file`
+
+</td>
+</tr>
+</table>
+
+### Tools I use every day
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
 ### [`idea-to-build`](https://github.com/winchxyz/idea-to-build)
 
 Turn a raw idea into a plan you can build. A multi-agent methodology with isolated critique, fact-checking, and a handoff straight into Claude Code.
 
 <img src="https://img.shields.io/github/stars/winchxyz/idea-to-build?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/languages/top/winchxyz/idea-to-build?style=flat-square&labelColor=07090A&color=868C7E" alt="language" />
+<img src="https://img.shields.io/github/forks/winchxyz/idea-to-build?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
 <img src="https://img.shields.io/github/last-commit/winchxyz/idea-to-build?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
 
 `multi-agent` `Claude Code` `MCP` `prompt-engineering`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [`loupe`](https://github.com/winchxyz/loupe)
@@ -106,17 +156,19 @@ Turn a raw idea into a plan you can build. A multi-agent methodology with isolat
 Open-source, local Windows AI website builder. AI builds the site, you refine it by hand on the live render — every edit verified against the real DOM.
 
 <img src="https://img.shields.io/github/stars/winchxyz/loupe?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/languages/top/winchxyz/loupe?style=flat-square&labelColor=07090A&color=868C7E" alt="language" />
+<img src="https://img.shields.io/github/forks/winchxyz/loupe?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
 <img src="https://img.shields.io/github/last-commit/winchxyz/loupe?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
 
 `Electron` `Claude Agent SDK` `BYOK` `local-first`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [`x-ghostwriter`](https://github.com/winchxyz/x-ghostwriter)
 
-Your AI ghostwriter for X — drafts posts and replies in your voice. Runs locally, costs nothing, sounds like you and not like a LinkedIn thought leader.
+Your AI ghostwriter for X — drafts posts and replies in your voice. Runs locally, costs nothing, and you always hit publish yourself.
 
 <img src="https://img.shields.io/github/stars/winchxyz/x-ghostwriter?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
 <img src="https://img.shields.io/github/languages/top/winchxyz/x-ghostwriter?style=flat-square&labelColor=07090A&color=868C7E" alt="language" />
@@ -125,14 +177,27 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 `n8n` `self-hosted` `Telegram` `build-in-public`
 
 </td>
+<td width="50%" valign="top">
+
+### `also in the workshop`
+
+[**endless-fishing**](https://github.com/winchxyz/endless-fishing) — an endless ocean under the sky that is actually above you right now. Physically correct astronomy, a JONSWAP spectrum, hand-written buoyancy.
+
+[**loupe-website**](https://github.com/winchxyz/loupe-website) — the product site for Loupe.
+
+[**All repositories →**](https://github.com/winchxyz?tab=repositories)
+
+</td>
 </tr>
 </table>
 
 <!--
-  PENDING — add `clout` here once the repo is public and released.
-  "Your Telegram, organized. AI-powered personal cloud on top of your own
-  Telegram account." TypeScript. Five cards won't balance in a 2-column
-  table, so either drop x-ghostwriter to the stats block or go to 3 rows.
+  PENDING — add `clout` once the repo is public and released (still private as of
+  2026-08-12, verified via the API). "Your Telegram, organized. AI-powered personal
+  cloud on top of your own Telegram account." TypeScript.
+  It belongs in the "Tools I use every day" table — swap it into the
+  "also in the workshop" cell and move that cell's contents into a plain line
+  under the table.
 -->
 
 <br />
@@ -248,7 +313,7 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
   <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=loupe&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&icon_color=C6F24E&description_lines_count=3" alt="loupe" />
 </a>
 <a href="https://github.com/winchxyz/x-ghostwriter">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=x-ghostwriter&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&icon_color=C6F24E&description_lines_count=3" alt="x-ghostwriter" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=moon-rover&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&icon_color=C6F24E&description_lines_count=3" alt="moon-rover" />
 </a>
 
 <br /><br />
