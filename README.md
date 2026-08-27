@@ -243,28 +243,14 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
 
 <div align="center">
 
-<img width="62%" src="https://streak-stats.demolab.com?user=winchxyz&theme=transparent&hide_border=true&border_radius=6&ring=C6F24E&fire=E4FF9B&currStreakLabel=C6F24E&currStreakNum=B4BAAB&sideNums=B4BAAB&sideLabels=868C7E&dates=676C60&excludeDaysLabel=868C7E&date_format=M%20j%5B%2C%20Y%5D" alt="Contribution streak" />
-
-</div>
-
-<!--
-  ══════════════════════════════════════════════════════════════════════════
-  github-profile-summary-cards — pulled out on 2026-08-06.
-
-  The whole public instance started returning 500 (verified: fails for other
-  usernames too, so it's service-wide, not account-specific). It worked
-  earlier the same day, so it may well come back — retry the URL below and
-  delete these markers if it 200s.
-
-  Self-hosting works the same way as the others: fork
-  vn7n24fzkq/github-profile-summary-cards, deploy to Vercel, set GITHUB_TOKEN,
-  swap the domain. See SETUP.md.
-  ══════════════════════════════════════════════════════════════════════════
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=winchxyz&theme=github_dark" />
   <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=winchxyz&theme=github" alt="Profile details" />
 </picture>
+<img width="49%" src="https://streak-stats.demolab.com?user=winchxyz&theme=transparent&hide_border=true&border_radius=6&ring=C6F24E&fire=E4FF9B&currStreakLabel=C6F24E&currStreakNum=B4BAAB&sideNums=B4BAAB&sideLabels=868C7E&dates=676C60&excludeDaysLabel=868C7E&date_format=M%20j%5B%2C%20Y%5D" alt="Contribution streak" />
+
+<br /><br />
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=winchxyz&theme=github_dark" />
   <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=winchxyz&theme=github" alt="Repos per language" />
@@ -278,7 +264,7 @@ Your AI ghostwriter for X — drafts posts and replies in your voice. Runs local
   <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=winchxyz&theme=github&utcOffset=3" alt="Productive time" />
 </picture>
 
--->
+</div>
 
 
 

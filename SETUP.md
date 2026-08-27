@@ -35,24 +35,29 @@ If the job fails with a permissions error, go to
 
 ---
 
-## 3. The two blocks that are commented out
+## 3. The blocks that are commented out
 
-At the time this was built, both public instances were down — verified, not guessed:
+Status verified by request, not guessed. Re-checked 2026-08-12:
 
 | Service | Status | Why |
 |---|---|---|
 | `github-readme-stats.vercel.app` | **503** | The public instance is chronically rate-limited. The project's own README recommends self-hosting. |
 | `github-profile-trophy.vercel.app` | **402 Payment Required** | The maintainer's Vercel free-tier quota is exhausted. Resets, then blows again. |
-| `github-profile-summary-cards.vercel.app` | **500** | Went down mid-build on 2026-08-06 — verified service-wide (fails for other usernames too), not account-specific. It worked earlier the same day, so it may come back. |
+| `github-profile-summary-cards.vercel.app` | **200 — back up** | Was 500 service-wide on 2026-08-06; recovered by 2026-08-12 and re-enabled after 16 consecutive clean requests across all four cards and both themes. |
 
-So the stats card, top-languages card, the four repo pin cards, the trophies and the four
-summary cards all live inside HTML comment blocks in `README.md`, ready to switch on.
+So the stats card, top-languages card, the four repo pin cards and the trophies still live
+inside an HTML comment block in `README.md`, ready to switch on. The summary cards are live
+again in `~/stats`, paired with the streak card.
 
-That leaves `~/stats` as a single streak card, deliberately widened to 62% and centred so it
-reads as intentional rather than truncated. Resist the urge to pad it with `shields.io`
-`dynamic/json` badges — they hit GitHub's API unauthenticated from shields' shared IPs and
-render as `INVALID` under load.
+If summary-cards drops out again, pull the block and widen the streak card to `62%` so the
+section reads as intentional rather than truncated. Resist the urge to pad it with
+`shields.io` `dynamic/json` badges — they hit GitHub's API unauthenticated from shields'
+shared IPs and render as `INVALID` under load.
 
+**Checking these from a terminal:** `visitorbadge.io` returns **403 to a bare `curl` UA** but
+200 to a browser one. That is a bot filter, not an outage — GitHub's camo proxy fetches with a
+normal user agent, so the badge works on the live profile. Pass `-A 'Mozilla/5.0'` when you
+audit URLs, or you will chase a ghost.
 ### Self-host github-readme-stats (5 min, free)
 
 1. Fork <https://github.com/anuraghazra/github-readme-stats>.
