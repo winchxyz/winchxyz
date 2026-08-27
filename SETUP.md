@@ -58,6 +58,7 @@ shared IPs and render as `INVALID` under load.
 200 to a browser one. That is a bot filter, not an outage — GitHub's camo proxy fetches with a
 normal user agent, so the badge works on the live profile. Pass `-A 'Mozilla/5.0'` when you
 audit URLs, or you will chase a ghost.
+
 ### Self-host github-readme-stats (5 min, free)
 
 1. Fork <https://github.com/anuraghazra/github-readme-stats>.
