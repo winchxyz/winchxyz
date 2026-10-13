@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --bg: #f3efe6; --ink: #1b1a17; --soft: #6d675c; --accent: #d9472b; --rule: #d8d1c2; }
+  .dark { --bg: #0f0f0e; --ink: #ede8dd; --soft: #9a9488; --accent: #ff6a3d; --rule: #2a2925; }
+  html, body { margin: 0; }
+  body { width: 1280px; height: 320px; background: var(--bg); overflow: hidden; position: relative;
+         font-family: 'Instrument Serif', Georgia, serif; color: var(--ink); }
+  .text { position: absolute; left: 72px; top: 54px; width: 760px; }
+  .handle { font: 500 15px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: var(--accent); text-transform: uppercase; }
+  h1 { font-weight: 400; font-size: 112px; line-height: .95; margin: 18px 0 0; letter-spacing: -.01em; }
+  h1 em { font-style: italic; }
+  .line { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--rule);
+          font: 400 15px/1.55 'JetBrains Mono', monospace; color: var(--soft); width: 700px; }
+  canvas { position: absolute; right: 56px; top: 20px; }
+</style>
+</head>
+<body>
+<div class="text">
+  <div class="handle">@winchxyz on X</div>
+  <h1>winch<em>xyz</em></h1>
+  <div class="line">Tools, apps, games and video,<br>built with Claude Code.</div>
+</div>
+<canvas id="c" width="560" height="560" style="width:280px;height:280px"></canvas>
+<script>
+  const dark = location.search === '?dark';
+  if (dark) document.body.classList.add('dark');
+  const css = getComputedStyle(document.body);
+  const ink = css.getPropertyValue('--ink').trim();
+  const accent = css.getPropertyValue('--accent').trim();
+
+  // A moon drawn as one continuous spiral: the line gets thicker where the sphere is darker.
+  const c = document.getElementById('c'), g = c.getContext('2d');
+  const cx = 280, cy = 280, R = 246, turns = 30;
+  const L = [-0.72, -0.38, 0.45];
+  const ln = Math.hypot(...L); L[0] /= ln; L[1] /= ln; L[2] /= ln;
+  const craters = [[-0.35, -0.2, 0.18], [0.28, 0.32, 0.13], [0.1, -0.45, 0.09], [-0.1, 0.5, 0.1], [0.45, -0.1, 0.07], [-0.55, 0.25, 0.08]];
+  function shade(x, y) {
+    const z = Math.sqrt(Math.max(0, 1 - x * x - y * y));
+    let nx = x, ny = y, nz = z;
+    for (const [px, py, r] of craters) {
+      const d = Math.hypot(x - px, y - py);
+      if (d < r) { const k = 1.6 * (1 - d / r); nx += (x - px) / r * k; ny += (y - py) / r * k; }
+    }
+    const n = Math.hypot(nx, ny, nz);
+    const lit = Math.max(0, (nx * L[0] + ny * L[1] + nz * L[2]) / n);
+    return Math.min(1, 1.15 * lit);
+  }
+  g.lineCap = 'round';
+  g.strokeStyle = ink;
+  const steps = 26000;
+  let px = cx, py = cy;
+  for (let i = 1; i <= steps; i++) {
+    const t = i / steps;
+    const a = t * turns * Math.PI * 2;
+    const r = t * R;
+    const x = cx + Math.cos(a) * r, y = cy + Math.sin(a) * r;
+    const b = shade((x - cx) / R, (y - cy) / R);
+    // light theme draws the shadow, dark theme draws the light
+    const ink01 = dark ? b : 1 - b;
+    g.lineWidth = 0.5 + Math.pow(ink01, 1.4) * 7.2;
+    g.beginPath(); g.moveTo(px, py); g.lineTo(x, y); g.stroke();
+    px = x; py = y;
+  }
+  // the pen's start, in the accent colour
+  g.fillStyle = accent;
+  g.beginPath(); g.arc(px, py, 7, 0, Math.PI * 2); g.fill();
+  window.__done = true;
+</script>
+</body>
+</html>

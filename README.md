@@ -1,341 +1,194 @@
-<!--
-  ┌───────────────────────────────────────────────────────────────────────┐
-  │  winchxyz / winchxyz  ·  GitHub profile README                        │
-  │                                                                       │
-  │  PALETTE — "Signal": monochrome + one acid accent.                    │
-  │    07090A  ink        · gradient start, badge labels                  │
-  │    1C2418  moss       · gradient mid, snake body (light mode)         │
-  │    10140E  pill       · toolbox badge fill                            │
-  │    C6F24E  lime       · THE accent — titles, ring, primary CTA        │
-  │    E4FF9B  lime light · streak fire                                   │
-  │    F2F6EC  chalk      · capsule text, brightest logos                 │
-  │    E9EDE3  bone       · light text on dark                            │
-  │    B4BAAB  ash        · streak numbers                                │
-  │    868C7E  muted      · body text — mid-tone, reads on BOTH themes    │
-  │    676C60  dim        · dates                                         │
-  │                                                                       │
-  │  Find-and-replace those hex values to reskin the whole profile.       │
-  │  See SETUP.md for publishing + self-hosting the two commented blocks. │
-  └───────────────────────────────────────────────────────────────────────┘
--->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.png">
+  <img src="assets/header-light.png" alt="winchxyz. Tools, apps, games and video, built with Claude Code." width="100%">
+</picture>
 
-<div align="center">
+I build whatever I need at the moment with Claude Code: AI tools I use every day, photo and design apps, browser games, motion videos, a converter from Minecraft builds to 3D prints. Everything here is open source, and most of it runs in the browser with nothing to install.
 
-<img
-  src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:07090A,55:1C2418,100:C6F24E&section=header&text=winch&fontSize=70&fontColor=F2F6EC&fontAlignY=33&desc=vibecoding%20cool%20shit&descAlign=50&descAlignY=54&descSize=18&animation=fadeIn"
-  width="100%"
-  alt="winch — vibecoding cool shit"
-/>
+[X @winchxyz](https://x.com/winchxyz) &nbsp;·&nbsp; [winchxyz.github.io](https://winchxyz.github.io)
 
-<img
-  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=1200&color=C6F24E&center=true&vCenter=true&width=720&height=48&lines=Real-time+graphics+and+AI+dev+tools;Shaders+on+one+end%2C+agents+on+the+other;Local-first.+Open+source.+Nothing+hidden.;Built+because+I+wanted+it+to+exist"
-  alt="Real-time graphics and AI dev tools"
-/>
-
-<br />
-
-<a href="https://x.com/winchxyz">
-  <img src="https://img.shields.io/badge/@winchxyz-C6F24E?style=for-the-badge&logo=x&logoColor=F2F6EC&labelColor=07090A" alt="X / Twitter" />
-</a>
-<a href="https://tryloupe.app">
-  <img src="https://img.shields.io/badge/tryloupe.app-10140E?style=for-the-badge&logo=googlechrome&logoColor=868C7E&labelColor=07090A" alt="Website" />
-</a>
-<a href="https://github.com/winchxyz?tab=followers">
-  <img src="https://img.shields.io/github/followers/winchxyz?style=for-the-badge&logo=github&logoColor=F2F6EC&label=followers&labelColor=07090A&color=868C7E" alt="Followers" />
-</a>
-<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fwinchxyz&label=visitors&countColor=%23C6F24E&style=for-the-badge&labelColor=%2307090A" alt="Visitors" />
-
-</div>
-
-<br />
-
-## `whoami`
-
-I build the thing I wish existed, then put it on GitHub.
-
-Some of it is graphics — real-time simulators where the world is generated in shaders and there's no engine underneath. Some of it is tooling I reach for every day: a design studio that verifies its own edits, a ghostwriter that actually sounds like me, a way to think an idea through that pushes back instead of nodding along.
-
-Different problems, same habits. Runs on your machine. Open source. Nothing hidden behind a wrapper.
-
-```yaml
-building:     real-time graphics, AI dev tools, agent workflows
-stack:        JavaScript · GLSL · TypeScript · Electron · Claude Agent SDK
-principles:   [local-first, BYOK, open source, no black boxes]
-allergic_to:  [AI slop, tools that hide what they did, 400 MB for a triangle]
-find_me_at:   x.com/winchxyz
-```
-
-<br />
-
-## `~/projects`
-
-### Real-time graphics
-
-Everything generated at runtime — no asset files, no build step, nothing downloaded.
+## Tools
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### [`tidewright`](https://github.com/winchxyz/tidewright)
-
-A 3D sandcastle simulator that runs entirely on the GPU. No engine, no libraries, no asset files, no build step — built in a single prompt with Claude Code.
-
-<img src="https://img.shields.io/github/stars/winchxyz/tidewright?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/forks/winchxyz/tidewright?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/tidewright?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
-
-`WebGL2` `GLSL` `zero-deps` `one-prompt`
-
+<td width="33%" valign="top">
+<a href="https://tryloupe.app/"><img src="assets/p/loupe.jpg" alt="loupe" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/loupe">loupe</a></b>
+<br><sub>A local website builder for Windows. AI makes the site, you fix it by hand on the live page.</sub>
+<br><sub><a href="https://tryloupe.app/">Site</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/loupe">Code</a></sub>
 </td>
-<td width="50%" valign="top">
-
-### [`moon-rover`](https://github.com/winchxyz/moon-rover)
-
-A 3D lunar rover survey game. WebGL2, no build step, no third-party assets — every texture and every sound is generated at runtime.
-
-<img src="https://img.shields.io/github/stars/winchxyz/moon-rover?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/forks/winchxyz/moon-rover?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/moon-rover?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
-
-`WebGL2` `procedural-audio` `zero-assets` `gamedev`
-
+<td width="33%" valign="top">
+<a href="https://github.com/winchxyz/idea-to-build"><img src="assets/p/idea-to-build.jpg" alt="idea-to-build" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/idea-to-build">idea-to-build</a></b>
+<br><sub>A Claude Code plugin that turns a raw idea into a plan, with a critic that argues back.</sub>
+<br><sub><a href="https://github.com/winchxyz/idea-to-build">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/winchxyz/motion-studio"><img src="assets/p/motion-studio.jpg" alt="motion-studio" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/motion-studio">motion-studio</a></b>
+<br><sub>A Claude Code workflow that turns one brief into a finished motion video. Every frame is code.</sub>
+<br><sub><a href="https://github.com/winchxyz/motion-studio">Code</a></sub>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### [`navis`](https://github.com/winchxyz/navis)
-
-A flooded Gothic cathedral rendered in real time. One HTML file, no assets — the rose window, the marble, the caustics and the reverb are all generated at load.
-
-<img src="https://img.shields.io/github/stars/winchxyz/navis?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/forks/winchxyz/navis?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/navis?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
-
-`three.js` `GLSL` `single-file` `procedural-audio`
-
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/crunch-time/"><img src="assets/p/crunch-time.jpg" alt="crunch-time" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/crunch-time">crunch-time</a></b>
+<br><sub>Watch your Claude Code agents work in a PS1-style office. The boss is your main session.</sub>
+<br><sub><a href="https://winchxyz.github.io/crunch-time/">Open</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/crunch-time">Code</a></sub>
 </td>
-<td width="50%" valign="top">
-
-### [`solebound`](https://github.com/winchxyz/solebound)
-
-A GPU shoe-repair simulator about roads that remember. One HTML file — geometry, materials, audio and portraits all generated at runtime.
-
-<img src="https://img.shields.io/github/stars/winchxyz/solebound?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/languages/top/winchxyz/solebound?style=flat-square&labelColor=07090A&color=868C7E" alt="language" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/solebound?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
-
-`WebGL` `GLSL` `procedural` `single-file`
-
+<td width="33%" valign="top">
+<a href="https://github.com/winchxyz/x-ghostwriter"><img src="assets/p/x-ghostwriter.jpg" alt="x-ghostwriter" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/x-ghostwriter">x-ghostwriter</a></b>
+<br><sub>Drafts X posts and replies in your voice with n8n, Grok and Claude. You press publish.</sub>
+<br><sub><a href="https://github.com/winchxyz/x-ghostwriter">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/winchxyz/mc-print-3d"><img src="assets/p/mc-print-3d.jpg" alt="mc-print-3d" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/mc-print-3d">mc-print-3d</a></b>
+<br><sub>Turns Minecraft builds into multi-colour 3D-printable models.</sub>
+<br><sub><a href="https://github.com/winchxyz/mc-print-3d">Code</a></sub>
 </td>
 </tr>
 </table>
 
-### Tools I use every day
+## Photo and design apps
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### [`idea-to-build`](https://github.com/winchxyz/idea-to-build)
-
-Turn a raw idea into a plan you can build. A multi-agent methodology with isolated critique, fact-checking, and a handoff straight into Claude Code.
-
-<img src="https://img.shields.io/github/stars/winchxyz/idea-to-build?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/forks/winchxyz/idea-to-build?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/idea-to-build?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
-
-`multi-agent` `Claude Code` `MCP` `prompt-engineering`
-
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/spiralist/"><img src="assets/p/spiralist.jpg" alt="spiralist" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/spiralist">spiralist</a></b>
+<br><sub>Turns a photo into a drawing made of one continuous line, and films it being drawn.</sub>
+<br><sub><a href="https://winchxyz.github.io/spiralist/">Open</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/spiralist">Code</a></sub>
 </td>
-<td width="50%" valign="top">
-
-### [`loupe`](https://github.com/winchxyz/loupe)
-
-Open-source, local Windows AI website builder. AI builds the site, you refine it by hand on the live render — every edit verified against the real DOM.
-
-<img src="https://img.shields.io/github/stars/winchxyz/loupe?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/forks/winchxyz/loupe?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=868C7E" alt="forks" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/loupe?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
-
-`Electron` `Claude Agent SDK` `BYOK` `local-first`
-
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/typist/"><img src="assets/p/typist.jpg" alt="typist" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/typist">typist</a></b>
+<br><sub>Turns a photo into text art you can paste into Instagram, X and Telegram.</sub>
+<br><sub><a href="https://winchxyz.github.io/typist/">Open</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/typist">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/mosaiz/"><img src="assets/p/mosaiz.jpg" alt="mosaiz" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/mosaiz">mosaiz</a></b>
+<br><sub>Turns a photo into a real mosaic, with a build video and a numbered 3D-print kit.</sub>
+<br><sub><a href="https://winchxyz.github.io/mosaiz/">Open</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/mosaiz">Code</a></sub>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### [`x-ghostwriter`](https://github.com/winchxyz/x-ghostwriter)
-
-Your AI ghostwriter for X — drafts posts and replies in your voice. Runs locally, costs nothing, and you always hit publish yourself.
-
-<img src="https://img.shields.io/github/stars/winchxyz/x-ghostwriter?style=flat-square&logo=github&logoColor=868C7E&labelColor=07090A&color=C6F24E" alt="stars" />
-<img src="https://img.shields.io/github/languages/top/winchxyz/x-ghostwriter?style=flat-square&labelColor=07090A&color=868C7E" alt="language" />
-<img src="https://img.shields.io/github/last-commit/winchxyz/x-ghostwriter?style=flat-square&labelColor=07090A&color=868C7E" alt="last commit" />
-
-`n8n` `self-hosted` `Telegram` `build-in-public`
-
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/platen/"><img src="assets/p/platen.jpg" alt="platen" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/platen">platen</a></b>
+<br><sub>A 3D manual typewriter. Write, draw typewriter art, or get a guide for your own machine.</sub>
+<br><sub><a href="https://winchxyz.github.io/platen/">Open</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/platen">Code</a></sub>
 </td>
-<td width="50%" valign="top">
-
-### `also in the workshop`
-
-[**endless-fishing**](https://github.com/winchxyz/endless-fishing) — an endless ocean under the sky that is actually above you right now. Physically correct astronomy, a JONSWAP spectrum, hand-written buoyancy.
-
-[**loupe-website**](https://github.com/winchxyz/loupe-website) — the product site for Loupe.
-
-[**All repositories →**](https://github.com/winchxyz?tab=repositories)
-
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/seedplot/"><img src="assets/p/seedplot.jpg" alt="seedplot" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/seedplot">seedplot</a></b>
+<br><sub>A drawing machine with five styles. The same seed always gives the same picture.</sub>
+<br><sub><a href="https://winchxyz.github.io/seedplot/">Open</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/seedplot">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/credits-cubed/"><img src="assets/p/credits-cubed.jpg" alt="credits-cubed" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/credits-cubed">credits-cubed</a></b>
+<br><sub>A picture-cube puzzle made from Jack Butcher's Credits, each drawn from its onchain seed.</sub>
+<br><sub><a href="https://winchxyz.github.io/credits-cubed/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/credits-cubed">Code</a></sub>
 </td>
 </tr>
 </table>
 
-<!--
-  PENDING — add `clout` once the repo is public and released (still private as of
-  2026-08-12, verified via the API). "Your Telegram, organized. AI-powered personal
-  cloud on top of your own Telegram account." TypeScript.
-  It belongs in the "Tools I use every day" table — swap it into the
-  "also in the workshop" cell and move that cell's contents into a plain line
-  under the table.
--->
+## Games
 
-<br />
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/moon-rover/"><img src="assets/p/moon-rover.jpg" alt="moon-rover" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/moon-rover">moon-rover</a></b>
+<br><sub>Drive a rover across the Moon and survey it. Every texture and sound is made in code.</sub>
+<br><sub><a href="https://winchxyz.github.io/moon-rover/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/moon-rover">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/tidewright/"><img src="assets/p/tidewright.jpg" alt="tidewright" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/tidewright">tidewright</a></b>
+<br><sub>Build sandcastles on a beach that runs entirely on the GPU.</sub>
+<br><sub><a href="https://winchxyz.github.io/tidewright/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/tidewright">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/celadon/"><img src="assets/p/celadon.jpg" alt="celadon" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/celadon">celadon</a></b>
+<br><sub>A pottery game: throw a pot on the wheel, mix the glaze, fire the kiln.</sub>
+<br><sub><a href="https://winchxyz.github.io/celadon/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/celadon">Code</a></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/vesper-street/"><img src="assets/p/vesper-street.jpg" alt="vesper-street" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/vesper-street">vesper-street</a></b>
+<br><sub>Isometric survival horror in a drowned voxel town. The flashlight is your only weapon.</sub>
+<br><sub><a href="https://winchxyz.github.io/vesper-street/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/vesper-street">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/crayon-contraptions/"><img src="assets/p/crayon-contraptions.jpg" alt="crayon-contraptions" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/crayon-contraptions">crayon-contraptions</a></b>
+<br><sub>A Rube Goldberg puzzle game drawn in crayon. 100 levels, seven crayons with their own physics.</sub>
+<br><sub><a href="https://winchxyz.github.io/crayon-contraptions/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/crayon-contraptions">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/endless-fishing/"><img src="assets/p/endless-fishing.jpg" alt="endless-fishing" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/endless-fishing">endless-fishing</a></b>
+<br><sub>An endless ocean under the same sky that is above you right now.</sub>
+<br><sub><a href="https://winchxyz.github.io/endless-fishing/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/endless-fishing">Code</a></sub>
+</td>
+</tr>
+</table>
 
-## `~/toolbox`
+## Graphics and video
 
-<div align="center">
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/motion-reels/"><img src="assets/p/motion-reels.jpg" alt="motion-reels" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/motion-reels">motion-reels</a></b>
+<br><sub>Short motion videos made with AI and code.</sub>
+<br><sub><a href="https://winchxyz.github.io/motion-reels/">Watch</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/motion-reels">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/navis/"><img src="assets/p/navis.jpg" alt="navis" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/navis">navis</a></b>
+<br><sub>A flooded Gothic cathedral rendered in real time, in one HTML file.</sub>
+<br><sub><a href="https://winchxyz.github.io/navis/">Open</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/navis">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/aetherflow/"><img src="assets/p/aetherflow.jpg" alt="aetherflow" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/aetherflow">aetherflow</a></b>
+<br><sub>A 3D fluid lab with real-time refraction and caustics.</sub>
+<br><sub><a href="https://winchxyz.github.io/aetherflow/">Open</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/aetherflow">Code</a></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/cut/"><img src="assets/p/cut.jpg" alt="cut" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/cut">cut</a></b>
+<br><sub>Slice objects along the exact path your mouse draws.</sub>
+<br><sub><a href="https://winchxyz.github.io/cut/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/cut">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/winchxyz/solebound"><img src="assets/p/solebound.jpg" alt="solebound" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/solebound">solebound</a></b>
+<br><sub>A shoe-repair sim about roads that remember. One HTML file.</sub>
+<br><sub><a href="https://github.com/winchxyz/solebound">Code</a></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://winchxyz.github.io/ant-farm/"><img src="assets/p/ant-farm.jpg" alt="ant-farm" width="100%"></a>
+<br><b><a href="https://github.com/winchxyz/ant-farm">ant-farm</a></b>
+<br><sub>A 3D ant farm on a hand-written WebGL2 engine.</sub>
+<br><sub><a href="https://winchxyz.github.io/ant-farm/">Play</a> &nbsp;·&nbsp; <a href="https://github.com/winchxyz/ant-farm">Code</a></sub>
+</td>
+</tr>
+</table>
 
-**Ship with**
+## Also
 
-<img src="https://img.shields.io/badge/TypeScript-10140E?style=for-the-badge&logo=typescript&logoColor=E9EDE3&labelColor=10140E" alt="TypeScript" />
-<img src="https://img.shields.io/badge/JavaScript-10140E?style=for-the-badge&logo=javascript&logoColor=E9EDE3&labelColor=10140E" alt="JavaScript" />
-<img src="https://img.shields.io/badge/Node.js-10140E?style=for-the-badge&logo=nodedotjs&logoColor=E9EDE3&labelColor=10140E" alt="Node.js" />
-<img src="https://img.shields.io/badge/Electron-10140E?style=for-the-badge&logo=electron&logoColor=E9EDE3&labelColor=10140E" alt="Electron" />
-<img src="https://img.shields.io/badge/HTML5-10140E?style=for-the-badge&logo=html5&logoColor=E9EDE3&labelColor=10140E" alt="HTML5" />
-<img src="https://img.shields.io/badge/CSS-10140E?style=for-the-badge&logo=css&logoColor=E9EDE3&labelColor=10140E" alt="CSS" />
-<img src="https://img.shields.io/badge/GLSL-10140E?style=for-the-badge&logo=webgl&logoColor=E9EDE3&labelColor=10140E" alt="GLSL / WebGL" />
-<img src="https://img.shields.io/badge/PowerShell-10140E?style=for-the-badge&logoColor=E9EDE3&labelColor=10140E" alt="PowerShell" />
-<img src="https://img.shields.io/badge/Bash-10140E?style=for-the-badge&logo=gnubash&logoColor=E9EDE3&labelColor=10140E" alt="Bash" />
+[zodiac-z13-z32](https://github.com/winchxyz/zodiac-z13-z32) is a reproducible computational attack on two unsolved Zodiac ciphers, negative results included. [ar-butter](https://github.com/winchxyz/ar-butter) lets you crack a stick of butter with your hands through a webcam. [winchxyz.github.io](https://github.com/winchxyz/winchxyz.github.io) is my site, rendered on the GPU.
 
-**Agent stack**
-
-<img src="https://img.shields.io/badge/Claude-10140E?style=for-the-badge&logo=claude&logoColor=C6F24E&labelColor=10140E" alt="Claude" />
-<img src="https://img.shields.io/badge/Claude%20Code-10140E?style=for-the-badge&logo=anthropic&logoColor=C6F24E&labelColor=10140E" alt="Claude Code" />
-<img src="https://img.shields.io/badge/MCP-10140E?style=for-the-badge&logo=modelcontextprotocol&logoColor=C6F24E&labelColor=10140E" alt="MCP" />
-<img src="https://img.shields.io/badge/OpenRouter-10140E?style=for-the-badge&logo=openrouter&logoColor=C6F24E&labelColor=10140E" alt="OpenRouter" />
-<img src="https://img.shields.io/badge/Gemini-10140E?style=for-the-badge&logo=googlegemini&logoColor=C6F24E&labelColor=10140E" alt="Gemini" />
-<img src="https://img.shields.io/badge/n8n-10140E?style=for-the-badge&logo=n8n&logoColor=C6F24E&labelColor=10140E" alt="n8n" />
-
-**Around it**
-
-<img src="https://img.shields.io/badge/Git-10140E?style=for-the-badge&logo=git&logoColor=868C7E&labelColor=10140E" alt="Git" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-10140E?style=for-the-badge&logo=githubactions&logoColor=868C7E&labelColor=10140E" alt="GitHub Actions" />
-<img src="https://img.shields.io/badge/Vercel-10140E?style=for-the-badge&logo=vercel&logoColor=868C7E&labelColor=10140E" alt="Vercel" />
-<img src="https://img.shields.io/badge/Figma-10140E?style=for-the-badge&logo=figma&logoColor=868C7E&labelColor=10140E" alt="Figma" />
-<img src="https://img.shields.io/badge/Obsidian-10140E?style=for-the-badge&logo=obsidian&logoColor=868C7E&labelColor=10140E" alt="Obsidian" />
-
-</div>
-
-<br />
-
-## `~/stats`
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=winchxyz&theme=github_dark" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=winchxyz&theme=github" alt="Profile details" />
-</picture>
-<img width="49%" src="https://streak-stats.demolab.com?user=winchxyz&theme=transparent&hide_border=true&border_radius=6&ring=C6F24E&fire=E4FF9B&currStreakLabel=C6F24E&currStreakNum=B4BAAB&sideNums=B4BAAB&sideLabels=868C7E&dates=676C60&excludeDaysLabel=868C7E&date_format=M%20j%5B%2C%20Y%5D" alt="Contribution streak" />
-
-<br /><br />
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=winchxyz&theme=github_dark" />
-  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=winchxyz&theme=github" alt="Repos per language" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=winchxyz&theme=github_dark" />
-  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=winchxyz&theme=github" alt="Most commit language" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=winchxyz&theme=github_dark&utcOffset=3" />
-  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=winchxyz&theme=github&utcOffset=3" alt="Productive time" />
-</picture>
-
-</div>
-
-
-
-<!--
-  ══════════════════════════════════════════════════════════════════════════
-  OPTIONAL — github-readme-stats cards + trophies. Already themed in Clay.
-
-  Both public instances were DOWN when this profile was built:
-    · github-readme-stats.vercel.app   →  503 (chronically rate-limited)
-    · github-profile-trophy.vercel.app →  402 (Vercel quota exhausted)
-
-  Deploy your own copies (5 min, free — see SETUP.md), then:
-    1. replace  github-readme-stats.vercel.app   with YOUR-GRS.vercel.app
-    2. replace  github-profile-trophy.vercel.app with YOUR-TROPHY.vercel.app
-    3. delete these comment markers.
-  ══════════════════════════════════════════════════════════════════════════
-
-<div align="center">
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=winchxyz&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&icon_color=C6F24E&custom_title=winch%20%C2%B7%20github%20stats" alt="GitHub stats" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=winchxyz&layout=compact&langs_count=8&size_weight=0.5&count_weight=0.5&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&custom_title=Most%20used%20languages" alt="Top languages" />
-
-<br /><br />
-
-<a href="https://github.com/winchxyz/tidewright">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=tidewright&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&icon_color=C6F24E&description_lines_count=3" alt="tidewright" />
-</a>
-<a href="https://github.com/winchxyz/idea-to-build">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=idea-to-build&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&icon_color=C6F24E&description_lines_count=3" alt="idea-to-build" />
-</a>
-<a href="https://github.com/winchxyz/loupe">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=loupe&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&icon_color=C6F24E&description_lines_count=3" alt="loupe" />
-</a>
-<a href="https://github.com/winchxyz/x-ghostwriter">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=winchxyz&repo=moon-rover&theme=transparent&hide_border=true&title_color=C6F24E&text_color=868C7E&icon_color=C6F24E&description_lines_count=3" alt="moon-rover" />
-</a>
-
-<br /><br />
-
-<img src="https://github-profile-trophy.vercel.app/?username=winchxyz&theme=gruvbox&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=7&title=Repositories,Commits,Stars,Followers,PullRequest,Experience,MultiLanguage" alt="Trophies" />
-
-</div>
-
--->
-
-<br />
-
-## `~/contributions`
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/winchxyz/winchxyz/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/winchxyz/winchxyz/output/github-snake.svg" />
-  <img alt="Contribution graph snake animation" src="https://raw.githubusercontent.com/winchxyz/winchxyz/output/github-snake.svg" width="100%" />
-</picture>
-
-</div>
-
-<br />
-
-<div align="center">
-
-### `Different problems. Same habits.`
-
-<a href="https://x.com/winchxyz"><b>@winchxyz</b></a> &nbsp;·&nbsp; <a href="https://tryloupe.app"><b>tryloupe.app</b></a>
-
-<img
-  src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:C6F24E,45:1C2418,100:07090A&animation=fadeIn"
-  width="100%"
-  alt=""
-/>
-
-</div>
+<sub>Every project on this page was built with Claude Code. All repositories: <a href="https://github.com/winchxyz?tab=repositories">github.com/winchxyz</a></sub>
